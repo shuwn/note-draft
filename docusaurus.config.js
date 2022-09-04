@@ -97,33 +97,29 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'About Me',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-            ],
-          },
+          // {
+          //   title: 'About Me',
+          //   items: [
+          //     {
+          //       label: 'Stack Overflow',
+          //       href: 'https://shuwn.dev/about/',
+          //     },
+          //   ],
+          // },
           {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Github',
+                href: 'https://github.com/shuwn',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Linkedin',
+                href: 'https://www.linkedin.com/in/yi-hsiang-hsu/',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Facebook',
+                href: 'https://www.facebook.com/Shuwn.Life',
               },
             ],
           },
@@ -131,17 +127,17 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'About Me',
+                to: 'https://shuwn.dev/about/',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/shuwn',
+                label: 'Blog',
+                href: 'https://shuwn.dev/',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} By Shuwn Hsu, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
