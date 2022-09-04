@@ -25,6 +25,23 @@ const config = {
   i18n: {
     defaultLocale: 'zh-TW',
     locales: ['en', 'zh-TW'],
+    path: 'i18n',
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+        calendar: 'gregory',
+        path: 'en',
+        },
+      'zh-TW': {
+        label: '繁體中文 (台灣)',
+        direction: 'ltr',
+        htmlLang: 'zh-TW',
+        calendar: 'gregory',
+        path: 'zh-TW',
+      }
+    }
   },
 
   presets: [
@@ -57,9 +74,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Shuwn‘s Note',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Sray Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -71,7 +88,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/shuwn',
             label: 'GitHub',
             position: 'right',
           },
@@ -81,11 +98,15 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'About Me',
             items: [
               {
                 label: 'Tutorial',
                 to: '/docs/intro',
+              },
+              {
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
             ],
           },
@@ -115,7 +136,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/shuwn',
               },
             ],
           },
@@ -130,3 +151,4 @@ const config = {
 };
 
 module.exports = config;
+
